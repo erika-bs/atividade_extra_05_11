@@ -51,7 +51,7 @@ $result = $conn->query($sql);
       border-radius: 5px;
     }
     a:hover {
-      background-color: #218838;
+      background-color: #0056b3;
     }
   </style>
 </head>
@@ -75,3 +75,4 @@ $result = $conn->query($sql);
   <a href="form.html">Voltar</a>
 </body>
 </html>
+
