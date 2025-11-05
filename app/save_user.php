@@ -16,9 +16,15 @@ $email = $_POST['email'];
 $sql = "INSERT INTO users (name, email) VALUES ('$name', '$email')";
 
 if ($conn->query($sql) === TRUE) {
-  echo "Usuário cadastrado com sucesso!";
+  echo "<script>
+          alert('Usuário cadastrado com sucesso!');
+          window.location.href = 'list_users.php';
+        </script>";
 } else {
-  echo "Erro: " . $conn->error;
+  echo "<script>
+          alert('Erro ao cadastrar usuário: " . addslashes($conn->error) . "');
+          window.location.href = 'form.html';
+        </script>";
 }
 
 $conn->close();
