@@ -44,7 +44,7 @@ $result = $conn->query($sql);
     a {
       display: inline-block;
       margin-top: 20px;
-      background-color: #28a745;
+      background-color: #007bff;
       color: white;
       padding: 10px 20px;
       text-decoration: none;
